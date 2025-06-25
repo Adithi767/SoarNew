@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAF9F6;
+    color: #4a6c74;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-image: url("images/Untitled\ design.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.container {
+    text-align: center;
+    padding: 1rem 2rem;
+    max-width: 90%;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-top: 30px;
+    padding-top: 0;
+
+}
+
+#logo {
+    width: 480px;
+    margin-bottom: 2rem;
+    margin-top: -40px;
+}
+
+.container p {
+    font-size: x-large;
+    font-weight: 500;
+    color:#4a6c74;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: x-large;
+    font-weight: 300;
+    background-color: #859EAC;
+    color: #4a6c74;
+    border: none;
+    margin-top: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+
+}
+
+.button:hover {
+  background-color: #778D99;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1.8s ease-out forwards;
+    display: inline-block;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#journal-page {
+    display: none;
+    opacity:0;
+    transition: opacity 1.5s ease;
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #333; 
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 3rem auto; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+#journal-page.show {
+    display:block;
+    opacity:1;
+}
+
+#journal-entry {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  resize: vertical;
+  overflow-y: scroll;
+}

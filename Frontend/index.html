@@ -2,14 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>Soar-Welcome!</title>
+    <title>Soar - Welcome!</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1>Soar</h1>
-        <p>Track your thoughts. Reflect with AI. Grow every day.</p>
-        <a href="new_entry.html" class="button">Get Started</a>
+    <div class="container" id="intro-screen">
+        <img src="images/SOAR-Photoroom.png" alt="Soar logo" id="logo" width="200">
+        
+ <p class="tagline">
+            <span class="fade-in" style="animation-delay: 0.8s;">Track your thoughts.</span>
+            <span class="fade-in" style="animation-delay: 1.3s;"> Reflect with AI.</span>
+            <span class="fade-in" style="animation-delay: 1.8s;"> Grow every day.</span>
+        </p>
+
+       <button id="get-started" class="button fade-in" style="animation-delay: 2.5s;">Get Started</button>
     </div>
+<!--new page-->
+<div id="journal-page" style="display: none;">
+  <h2>How Are You Feeling?</h2>
+  <div class="emoji-container">
+    <span>😭</span><span>😞</span><span>😐</span><span>😊</span><span>😄</span>
+  </div>
+  <textarea id="journal-entry" placeholder="Write about your thoughts and experiences today..."></textarea>
+  <button id="submit-btn">Submit and Reflect</button>
+</div>
+
+<!--javascript declaration-->
+<script src="script.js"></script>
 </body>
 </html>
+
+
+
+
